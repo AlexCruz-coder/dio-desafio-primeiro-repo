@@ -1,0 +1,19 @@
+Alguns comandos úteis
+1 - git pull -> Atualizar meu repositório local
+2 - git status -> Verificar os arquivos modificados. 
+3 - git checkout -- endereço do arquivo modificado por engano. 
+4 - git checkout -b xxxxxxxxxx (criar nova branch com base numa anterior)
+5 - git add . -- adicionar arquivos para o commit
+6 - git status -- tem que aparecer tudo verde agora. 
+7 - git commit -m "mensagem do que foi feito"
+8 - git push origin "nome da branch"
+
+outros comandos git
+git checkout nome_do_arquivo => desfaz alterações neste arquivo.
+git branch -D "nome branch" => deleta a branch
+---------
+Para navegar no último commit....
+git checkout HEAD~1
+se fizer novamente, vai para o commit anterior novamente...
+Para resetar um commit ....
+git reset HEAD~1 (obs... ele faz o reset do soft, ou seja reseta apenas o commit , os arquivos continuam alterados, sendo necessário vc fazer o checkout dos arquivos, e/ou fazer um git reset --hard, para apagar as alterações de todos os arquivos). 
